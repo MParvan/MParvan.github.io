@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Milad Parvan - AI Researcher | Personal Website"
+title                    : "Milad Parvan"
 title_separator          : "-"
 name                     : &name "Milad Parvan"
 description              : &description "personal description"

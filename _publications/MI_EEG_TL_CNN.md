@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/MI_EEG_TL_CNN
 date: 2019-04-30
 venue: 'ICEE Conference'
-paperurl: 'http://mparvan.github.io/files/Transfer_Learning_based_Motor_Imagery_Classification_using_Convolutional_Neural_Networks.pdf'
+paperurl: 'https://ieeexplore.ieee.org/abstract/document/8786636'
 ---
 This paper presents ...
 

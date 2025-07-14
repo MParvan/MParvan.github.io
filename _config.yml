@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Milad Parvan"
-  avatar           :  <img src="https://mparvan.github.io/images/me.jpg" class="author__avatar" alt="Your Sidebar Name">
+  avatar           :  "https://mparvan.github.io/images/me.jpg"
   bio              : " "
   location         : "Milan, Italy"
   employer         :

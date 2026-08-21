@@ -1,59 +1,86 @@
 ---
-layout: archive
-title: "CV"
+layout: single
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
+description: "Curriculum vitae of Milad Parvan."
 ---
 
-{% include base_path %}
+## Profile
 
-Education
-======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+Machine learning and computer vision engineer with more than five years of experience across biomedical signal processing, biometric recognition, real-time video analytics, and research software.
 
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+My work covers data preparation, preprocessing, model development, evaluation, experiment design, performance optimization, and the development of modular research pipelines.
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## Research and Engineering Experience
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+### Computer Vision Research Collaborator — Vrije Universiteit Brussel
+
+**2026–Present**
+
+Current research collaboration on ocular computer vision from RGB video, including eye-region analysis, pupil localization and size estimation, temporal tracking, gaze-related measurements, and evaluation under varying illumination, viewing conditions, head movement, and image quality.
+
+### Research Fellow — University of Milan
+
+**March 2024–February 2025**
+
+Research in biometric machine learning, including iris recognition, ECG biometrics, physiological-signal processing, deep learning, benchmarking, and reproducible experimental pipelines.
+
+### AI/ML Engineer (Consultant) — Road Traffic Injury Research Center
+
+**January 2020–January 2023**
+
+Applied computer vision for roadside-video analysis, including vehicle detection, tracking, speed estimation, inter-vehicle distance measurement, data annotation, model validation, and robustness analysis under uncontrolled environmental conditions.
+
+### Research Assistant — University of Tabriz
+
+**February 2019–February 2024**
+
+Research in motor-imagery EEG, brain-computer interfaces, signal processing, machine learning, deep learning, and comparative experimental evaluation.
+
+## Selected Research Project
+
+### ECG-biometrics-bench
+
+Development of a research framework for reproducible ECG-biometric experimentation and evaluation, with emphasis on standardized workflows, dataset handling, preprocessing, biometric evaluation protocols, testing, and reproducibility.
+
+The associated solo-authored paper is available as a 2026 arXiv preprint and is currently under review.
+
+[View the preprint on arXiv](https://arxiv.org/abs/2605.01548)
+
+## Education
+
+**M.Sc. in Electrical Engineering — Control Engineering**
+University of Tabriz, 2016–2019
+
+Thesis: *Classification of Motor Imagery EEG Signals Using Deep Learning Methods*
+
+**B.Sc. in Electrical Engineering**
+Amirkabir University of Technology (Tehran Polytechnic), 2011–2016
+
+## Technical Skills
+
+**Programming:** Python, C++, MATLAB, SQL, Bash
+
+**Machine Learning:** PyTorch, TensorFlow/Keras, scikit-learn, CNNs, recurrent neural networks, Transformers, representation learning, model evaluation
+
+**Computer Vision:** OpenCV, image and video processing, object detection, tracking, segmentation, biometric recognition
+
+**Biomedical Signals:** EEG/BCI, ECG, signal preprocessing, feature extraction, time-frequency analysis
+
+**Research and ML Engineering:** reproducible experimentation, data pipelines, benchmarking, Docker, FastAPI, REST APIs, pytest, Git, GitHub Actions, GitLab CI/CD, Linux
+
+## Teaching and Service
+
+- Teaching Assistant, Optimal Control, University of Tabriz
+- Teaching Assistant, Linear Control Systems, University of Tabriz
+- Vice President, IEEE Student Branch, University of Tabriz, 2017–2018
+- Research mentoring and support for undergraduate student projects
+
+## Publications
+
+See the complete [Publications](/publications/) page.
+
+For additional information, please [contact me](/contact/).

@@ -16,6 +16,10 @@ The associated solo-authored paper, **“ECG-biometrics-bench: A Unified Framewo
 
 [View the arXiv preprint](https://arxiv.org/abs/2605.01548)
 
+## Iris Recognition Framework
+
+During my research at the University of Milan, I developed a modular Python framework for iris recognition that integrated more than 30 classical and deep-learning methods behind reusable interfaces. The framework was designed for systematic experimentation, comparison, and reproducibility across multiple stages of iris recognition, including work with ocular images captured using conventional cameras under uncontrolled conditions.
+
 ## Ocular Computer Vision and Pupillometry
 
 My current research collaboration at Vrije Universiteit Brussel involves computer vision for ocular analysis from RGB video. The work considers eye-region analysis, pupil localization and size estimation, temporal tracking, gaze-related measurements, and reliability under changes in illumination, viewing conditions, head movement, and image quality.

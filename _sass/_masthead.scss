@@ -51,3 +51,162 @@
     font-weight: 700;
   }
 }
+
+/* Deterministic primary navigation */
+
+.primary-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 2.5rem;
+}
+
+.primary-nav__title {
+  flex: 0 0 auto;
+  margin-right: 2rem;
+  padding: 0.5rem 0;
+  color: $masthead-link-color;
+  font-weight: 700;
+  white-space: nowrap;
+
+  &:hover {
+    color: $masthead-link-color-hover;
+  }
+}
+
+.primary-nav__desktop {
+  display: none;
+  clear: none !important;
+  align-items: center;
+  margin: 0 0 0 auto !important;
+  padding: 0 !important;
+  list-style: none;
+
+  li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+  }
+
+  a {
+    display: block;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    color: $masthead-link-color;
+
+    &:hover {
+      color: $masthead-link-color-hover;
+    }
+  }
+}
+
+.primary-nav__mobile {
+  position: relative;
+  margin-left: auto;
+
+  summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+.primary-nav__hamburger,
+.primary-nav__hamburger::before,
+.primary-nav__hamburger::after {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: $masthead-link-color;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.primary-nav__hamburger {
+  position: relative;
+}
+
+.primary-nav__hamburger::before,
+.primary-nav__hamburger::after {
+  position: absolute;
+  left: 0;
+  content: "";
+}
+
+.primary-nav__hamburger::before {
+  top: -7px;
+}
+
+.primary-nav__hamburger::after {
+  top: 7px;
+}
+
+.primary-nav__mobile[open] .primary-nav__hamburger {
+  background: transparent;
+}
+
+.primary-nav__mobile[open] .primary-nav__hamburger::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.primary-nav__mobile[open] .primary-nav__hamburger::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.primary-nav__mobile-links {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  z-index: 30;
+  display: block;
+  clear: none !important;
+  min-width: 180px;
+  margin: 0 !important;
+  padding: 0.35rem 0 !important;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background: $background-color;
+  box-shadow: 0 4px 12px rgba(#000, 0.18);
+  list-style: none;
+
+  li {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    display: block;
+    margin: 0;
+    padding: 0.65rem 1rem;
+    color: $masthead-link-color;
+    white-space: nowrap;
+
+    &:hover {
+      color: $masthead-link-color-hover;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .primary-nav__desktop {
+    display: flex;
+  }
+
+  .primary-nav__mobile {
+    display: none;
+  }
+}

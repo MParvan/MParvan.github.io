@@ -6,7 +6,6 @@ permalink: /publication/ECG_Biometrics_Bench
 venue: "arXiv preprint"
 publication_label: "arXiv preprint, 2026"
 paperurl: "https://arxiv.org/abs/2605.01548"
-citation: 'M. Parvan, "ECG-biometrics-bench: A Unified Framework for Reproducible Benchmarking of ECG Biometrics," arXiv preprint, 2026.'
 ---
 
 A research framework and study focused on reproducible benchmarking of ECG-biometric systems across heterogeneous datasets, preprocessing configurations, and biometric evaluation protocols.

@@ -47,12 +47,11 @@ layout: default
         {% endif %}
         
              
-        {% if page.citation and page.paperurl %}
-          <p>Recommended citation: {{ page.citation }} <a href="{{ page.paperurl }}"><u>{{ page.paperurl }}</u></a></p>
-        {% elsif page.citation %}
-          <p>Recommended citation: {{ page.citation }} </p>
-        {% endif %}
     
+        {% if page.collection == 'publications' and page.paperurl %}
+          <p><a href="{{ page.paperurl }}">View publication</a></p>
+        {% endif %}
+
         </header>
       {% endunless %}
 

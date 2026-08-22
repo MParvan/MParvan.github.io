@@ -26,7 +26,7 @@ Current research collaboration on ocular computer vision from RGB video, includi
 
 **March 2024–February 2025**
 
-Research in biometric machine learning, including iris recognition, ECG biometrics, physiological-signal processing, deep learning, benchmarking, and reproducible experimental pipelines.
+Developed modular Python research software for biometric machine learning, including an iris-recognition framework integrating more than 30 classical and deep-learning methods behind reusable interfaces. The work covered systematic experimentation and reproducible evaluation for ocular images captured using conventional cameras under uncontrolled conditions, alongside research in ECG biometrics and physiological-signal processing.
 
 ### AI/ML Engineer (Consultant) — Road Traffic Injury Research Center
 
@@ -40,7 +40,7 @@ Applied computer vision for roadside-video analysis, including vehicle detection
 
 Research in motor-imagery EEG, brain-computer interfaces, signal processing, machine learning, deep learning, and comparative experimental evaluation.
 
-## Selected Research Project
+## Selected Research Projects
 
 ### ECG-biometrics-bench
 
@@ -49,6 +49,10 @@ Development of a research framework for reproducible ECG-biometric experimentati
 The associated solo-authored paper is available as a 2026 arXiv preprint and is currently under review.
 
 [View the preprint on arXiv](https://arxiv.org/abs/2605.01548)
+
+### Iris Recognition Framework
+
+Developed during my research at the University of Milan, this modular Python framework integrated more than 30 classical and deep-learning iris-recognition methods behind reusable interfaces, supporting systematic comparison and reproducible experimentation across multiple stages of the biometric pipeline.
 
 ## Education
 

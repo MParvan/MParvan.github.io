@@ -66,9 +66,14 @@ og_image                 :  # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : "Milad Parvan"
+  links:
+    - "https://scholar.google.com/citations?user=HWHGAnUAAAAJ&hl=en"
+    - "https://orcid.org/0000-0002-0804-2040"
+    - "https://www.linkedin.com/in/milad-parvan/"
+    - "https://www.researchgate.net/profile/Milad-Parvan"
+    - "https://github.com/mparvan"
 
 
 # Analytics
@@ -88,7 +93,7 @@ author:
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=HWHGAnUAAAAJ&hl=en"
   email            : "miladparvan72@gmail.com"
-  researchgate     :
+  researchgate     : "https://www.researchgate.net/profile/Milad-Parvan"
   uri              :
   bitbucket        :
   codepen          :

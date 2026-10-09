@@ -36,6 +36,25 @@ layout: default
         
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif page.collection == 'publications' %}
+          {% if page.authors %}
+            <p class="page__authors" style="margin: 0.3em 0 0.5em; font-size: 1.05em; color: #495057;"><strong>Authors:</strong> {{ page.authors }}</p>
+          {% endif %}
+          {% if page.publication_label %}
+            <p class="page__venue" style="margin: 0.2em 0 0.8em; font-style: italic;">{{ page.publication_label }}</p>
+          {% elsif page.venue %}
+            <p class="page__venue" style="margin: 0.2em 0 0.8em;">Published in <i>{{ page.venue }}</i>{% if page.date %}, {{ page.date | default: "1900-01-01" | date: "%Y" }}{% endif %}</p>
+          {% endif %}
+          {% if page.paperurl or page.pdf %}
+            <p class="page__links" style="margin-top: 0.8em; margin-bottom: 1em;">
+              {% if page.paperurl %}
+                <a href="{{ page.paperurl }}" class="btn btn--inverse btn--small" style="margin-right: 0.5em;"><i class="fas fa-fw fa-external-link-alt" aria-hidden="true"></i> View publication</a>
+              {% endif %}
+              {% if page.pdf %}
+                <a href="{{ page.pdf }}" class="btn btn--inverse btn--small"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> Download PDF</a>
+              {% endif %}
+            </p>
+          {% endif %}
         {% elsif page.venue and page.date %}
           {% if page.publication_label %}
             <p>{{ page.publication_label }}</p>
@@ -45,18 +64,19 @@ layout: default
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
-        
-             
-    
-        {% if page.collection == 'publications' and page.paperurl %}
-          <p><a href="{{ page.paperurl }}">View publication</a></p>
-        {% endif %}
 
         </header>
       {% endunless %}
 
       <section class="page__content" itemprop="text">
         {{ content }}
+        {% if page.bibtex %}
+          <h2>Citation</h2>
+          <details class="page__bibtex" style="margin-top: 1em; margin-bottom: 1.5em; padding: 0.8em 1em; background: #f8f9fa; border: 1px solid #e2e8f0; border-radius: 4px;">
+            <summary style="cursor: pointer; font-weight: bold;">Cite (BibTeX)</summary>
+            <pre style="margin-top: 0.8em; margin-bottom: 0; white-space: pre-wrap; font-size: 0.85em; background: #fff; border: 1px solid #edf2f7; padding: 0.8em; border-radius: 4px; overflow-x: auto;"><code>{{ page.bibtex }}</code></pre>
+          </details>
+        {% endif %}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
